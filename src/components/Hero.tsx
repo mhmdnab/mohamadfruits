@@ -1,6 +1,7 @@
 //bg-gradient-to-br from-[#B1D8B7] via-[#94C973] to-[#B1D8B7]
 
 import { Apple, Grape, Cherry } from "lucide-react";
+import ScrollLink from "./ScrollLink";
 
 export default function Component() {
   return (
@@ -34,9 +35,12 @@ export default function Component() {
 
           {/* Button */}
           <div>
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg rounded-full font-medium transition-colors duration-200 shadow-lg hover:shadow-xl">
+            <ScrollLink
+              href={"#menu"}
+              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg rounded-full font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
+            >
               See Menu
-            </button>
+            </ScrollLink>
           </div>
         </div>
 
